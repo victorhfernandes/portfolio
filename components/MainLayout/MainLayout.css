@@ -1,0 +1,8 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+span::first-letter {
+  font-weight: bold;
+}
