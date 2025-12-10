@@ -1,8 +1,39 @@
 .header {
   display: flex;
   flex-direction: column;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: var(--padding-xy);
 }
 
 span::first-letter {
   font-weight: bold;
+}
+
+.content {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: var(--padding-xy);
+  flex: 1 1 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: 500;
+  gap: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: var(--padding-xy);
+}
+
+.contact {
+  display: flex;
+  flex: 0;
+  gap: 0.3rem;
+}
+
+.contact img {
+  height: 1.4rem;
 }

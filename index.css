@@ -1,3 +1,23 @@
+:root {
+  --padding-xy: 1.4rem 1.8rem;
+  --primary-color: black;
+  --secondary-color: white;
+}
+
 * {
-    font-family: "Open Sans";
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+main-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
