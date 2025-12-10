@@ -1,5 +1,6 @@
 :root {
-  --padding-xy: 1.4rem 1.8rem;
+  --padding-xy: 1.2rem 1.8rem;
+  --padding-x: 0 1.8rem;
   --primary-color: black;
   --secondary-color: white;
 }

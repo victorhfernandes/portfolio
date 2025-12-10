@@ -4,16 +4,18 @@
   background-color: var(--secondary-color);
   color: var(--primary-color);
   padding: var(--padding-xy);
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
 }
 
 span::first-letter {
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .content {
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  padding: var(--padding-xy);
+  padding: var(--padding-x);
   flex: 1 1 100%;
 }
 
