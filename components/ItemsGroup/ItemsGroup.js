@@ -4,8 +4,25 @@ async function fetchHTML() {
 }
 
 async function fetchData() {
+  // const json = {
+  //   debugInfo: "doGet called. Path: data, Action: read",
+  //   data: [
+  //     {
+  //       role: "Assistente de Direção",
+  //       project: "Pecado Imperdoável",
+  // //       cover: "1-PKVxmqHskL3f3MDsPadIKk6GuoAAog3",
+  // //     },
+  // //     {
+  // //       role: "Assistente de Direção",
+  // //       project: "Hecatombe",
+  // //       cover: "13dhrk-7nrJWk5mShvJIAi-KnMokij3dd",
+  // //     },
+  // //   ],
+  // // };
+  // return json;
+
   const resp = await fetch(
-    "https://script.google.com/macros/s/AKfycby_2CY0Yx6zcLcFjyvldXAAj2JHwS_1Owp0Q7dJWKXurANZaBW3LKReQ-ClUuTa0ubX/exec?path=data&action=read",
+    "https://script.google.com/macros/s/AKfycby_2CY0Yx6zcLcFjyvldXAAj2JHwS_1Owp0Q7dJWKXurANZaBW3LKReQ-ClUuTa0ubX/exec?path=data&action=read"
   );
   return await resp.json();
 }
@@ -39,7 +56,7 @@ export default class MainLayout extends HTMLElement {
   async connectedCallback() {
     this.shadowRoot.innerHTML =
       (await organizeHtmlData()) +
-      `<link rel="stylesheet" href="/components/ItemsGroup/ItemsGroup.css" />
+      `<link rel="stylesheet" href="./components/ItemsGroup/ItemsGroup.css" />
 `;
   }
 }
