@@ -10,16 +10,15 @@ nav ul {
   font-weight: 400;
   justify-content: space-around;
   flex-wrap: wrap;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1em;
 }
 
 nav ul li {
-  padding: 0.8rem 2rem;
+  padding: 0.8em 2em;
 }
 
 nav ul li:hover {
   background-color: var(--secondary-color);
-  font-weight: 600;
   color: var(--primary-color);
   cursor: pointer;
 }

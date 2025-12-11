@@ -16,7 +16,7 @@ span::first-letter {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   padding: var(--padding-x);
-  flex: 1 1 100%;
+  flex: 1;
 }
 
 .footer {

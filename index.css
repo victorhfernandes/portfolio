@@ -1,6 +1,7 @@
 :root {
   --padding-xy: 1.2rem 1.8rem;
   --padding-x: 0 1.8rem;
+  --padding-y: 1.2rem 0;
   --primary-color: black;
   --secondary-color: white;
 }
@@ -21,4 +22,13 @@ main-layout {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+}
+
+items-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 0;
 }
